@@ -1,0 +1,89 @@
+header {
+  background-image: url(../assets/images/background.jpg);
+  padding: 50px 0px 20px 0px;
+  height: fit-content;
+  background-size: cover;
+  background-color: rgba(63, 8, 43, 0.5);
+  background-blend-mode: multiply;
+}
+
+.main-container {
+  position: relative;
+  padding: 30px 20px 30px 20px;
+  max-width: 90ch;
+  margin: auto;
+}
+
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-links {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+.project-container {
+  & + & {
+    margin-top: 15px;
+  }
+}
+
+.project-links {
+  margin-bottom: 5px;
+  display: flex;
+  gap: 10px;
+}
+
+.project-stack {
+  margin-bottom: 10px;
+}
+
+.profile-link {
+  color: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid transparent;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.9);
+  }
+}
+
+.profile-link-svg {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.telegram-svg {
+  &:hover {
+    filter: drop-shadow(0px 0px 8px #229ed9);
+  }
+}
+
+.github-svg {
+  &:hover {
+    filter: drop-shadow(0px 0px 8px #fdfefe);
+  }
+}
+
+.theme-switch {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.language-switch {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+@media all and (max-width: 480px) {
+  .profile-svg {
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
