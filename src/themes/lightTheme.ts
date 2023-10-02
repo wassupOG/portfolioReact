@@ -7,7 +7,7 @@ export const lightTheme = createTheme({
       default: "#e4e5f1",
     },
     secondary: {
-      main: "#d300dc",
+      main: "#9200ff",
     },
     divider: "#999",
   },
