@@ -1,10 +1,8 @@
 header {
-  background-image: url(../assets/images/background.jpg);
+  background-image: url(../assets/images/svg-back.svg);
+  background-size: cover;
   padding: 50px 0px 20px 0px;
   height: fit-content;
-  background-size: cover;
-  background-color: rgba(63, 8, 43, 0.5);
-  background-blend-mode: multiply;
 }
 
 .main-container {
@@ -55,15 +53,7 @@ header {
 .profile-link-svg {
   width: 50px !important;
   height: 50px !important;
-}
 
-.telegram-svg {
-  &:hover {
-    filter: drop-shadow(0px 0px 8px #229ed9);
-  }
-}
-
-.github-svg {
   &:hover {
     filter: drop-shadow(0px 0px 8px #fdfefe);
   }
@@ -71,19 +61,34 @@ header {
 
 .theme-switch {
   position: absolute;
-  top: 10px;
-  right: 20px;
+  top: 15px;
+  right: 30px;
 }
 
 .language-switch {
   position: absolute;
   top: 10px;
-  right: 20px;
+  right: 10px;
 }
 
 @media all and (max-width: 480px) {
-  .profile-svg {
+  .profile-link-svg {
     width: 40px !important;
     height: 40px !important;
+  }
+
+  .profile-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+  }
+
+  .theme-switch {
+    top: 10px;
+    right: 10px;
+  }
+
+  header {
+    padding: 20px 0px 10px 0px;
   }
 }

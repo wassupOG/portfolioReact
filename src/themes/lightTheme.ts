@@ -6,13 +6,16 @@ export const lightTheme = createTheme({
     background: {
       default: "#e4e5f1",
     },
+    secondary: {
+      main: "#d300dc",
+    },
     divider: "#999",
   },
   components: {
     MuiPaper: {
       styleOverrides: {
         root: {
-          backgroundColor: "inherit", // Use the theme's default background color
+          backgroundColor: "inherit",
         },
       },
     },

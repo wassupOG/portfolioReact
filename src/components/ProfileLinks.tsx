@@ -6,10 +6,10 @@ export default function ProfileLinks() {
     <>
       <div className="profile-links">
         <a href="https://github.com/wassupOG" target="_blank" className="profile-link">
-          <GitHubIcon className="profile-link-svg github-svg" />
+          <GitHubIcon className="profile-link-svg" />
         </a>
         <a href="https://t.me/wassup21" target="_blank" className="profile-link">
-          <TelegramIcon className="profile-link-svg telegram-svg" />
+          <TelegramIcon className="profile-link-svg" />
         </a>
       </div>
     </>
