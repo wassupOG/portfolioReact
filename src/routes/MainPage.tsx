@@ -26,7 +26,7 @@ const ruContents = [
   },
   {
     title: "💻 Стек технологий",
-    body: [<>React, Zustand, TypeScript, JavaScript, Python, Django, MySQL, SQLite, CSS, SCSS и HTML.</>],
+    body: [<>React, Zustand, Redux, Redux Toolkit, TypeScript, JavaScript, Next.js, Python, Django, MySQL, SQLite, CSS, SCSS, Tailwind, и HTML.</>],
   },
   {
     title: "🤓 Образование и академические достижения",
@@ -135,7 +135,7 @@ const enContents = [
   },
   {
     title: "💻 Stack",
-    body: [<>React, Zustand, TypeScript, JavaScript, Python, Django, MySQL, SQLite, CSS, SCSS & HTML.</>],
+    body: [<>React, Zustand, Redux, Redux Toolkit, TypeScript, JavaScript, Next.js, Python, Django, MySQL, SQLite, CSS, SCSS, Tailwind, & HTML.</>],
   },
   {
     title: "🤓 Education & Academic Achievements",
