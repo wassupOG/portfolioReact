@@ -73,6 +73,24 @@ const ruContents = [
       <>
         <Paper variant="outlined" sx={{ p: 2, borderRadius: 3 }} className="project-container">
           <div className="project-links">
+            <Link href="https://helper-ai.vercel.app/" target="_blank" fontWeight={600} fontSize="large" color="secondary">
+              <Button startIcon={<LinkIcon />} color="secondary">
+                helper-ai.vercel-app
+              </Button>
+            </Link>
+            <Link href="https://github.com/wassupOG/helper-ai" target="_blank" fontWeight={600} fontSize="large" color="secondary">
+              <Button startIcon={<GitHubIcon />} color="secondary">
+                GitHub
+              </Button>
+            </Link>
+          </div>
+          <div className="project-stack">
+            <strong>Использованный стек:</strong> Next.js, React, TypeScript и Tailwind.
+          </div>
+          ИИ платформа с чат-ботом, генерацией видео, фото и музыки. Авторизация реализована с помощью GitHub и Google аккаунтов.
+        </Paper>
+        <Paper variant="outlined" sx={{ p: 2, borderRadius: 3 }} className="project-container">
+          <div className="project-links">
             <Link href="https://englishful.ru/" target="_blank" fontWeight={600} fontSize="large" color="secondary">
               <Button startIcon={<LinkIcon />} color="secondary">
                 englishful.ru
@@ -180,6 +198,25 @@ const enContents = [
     title: "🚀 Projects",
     body: [
       <>
+        <Paper variant="outlined" sx={{ p: 2, borderRadius: 3 }} className="project-container">
+          <div className="project-links">
+            <Link href="https://helper-ai.vercel.app/" target="_blank" fontWeight={600} fontSize="large" color="secondary">
+              <Button startIcon={<LinkIcon />} color="secondary">
+                helper-ai.vercel-app
+              </Button>
+            </Link>
+            <Link href="https://github.com/wassupOG/helper-ai" target="_blank" fontWeight={600} fontSize="large" color="secondary">
+              <Button startIcon={<GitHubIcon />} color="secondary">
+                GitHub
+              </Button>
+            </Link>
+          </div>
+          <div className="project-stack">
+            <strong>Stack used:</strong> Next.js, React, TypeScript & Tailwind.
+          </div>
+          An online AI platform with chatbot, video, audio & image generation. Users can sign-up via their GitHub or Google account.
+        </Paper>
+
         <Paper variant="outlined" sx={{ p: 2, borderRadius: 3 }} className="project-container">
           <div className="project-links">
             <Link href="https://englishful.ru/" target="_blank" fontWeight={600} fontSize="large" color="secondary">
