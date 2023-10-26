@@ -26,7 +26,7 @@ const ruContents = [
   },
   {
     title: "💻 Стек технологий",
-    body: [<>React, Zustand, Redux, Redux Toolkit, TypeScript, JavaScript, Next.js, Python, Django, MySQL, SQLite, CSS, SCSS, Tailwind, и HTML.</>],
+    body: [<>React, Zustand, Redux, Redux Toolkit, TypeScript, JavaScript, Next.js, Python, Django, MySQL, PostgreSQL, SQLite, CSS, SCSS, Tailwind, и HTML.</>],
   },
   {
     title: "🤓 Образование и академические достижения",
@@ -71,6 +71,25 @@ const ruContents = [
     title: "🚀 Проекты",
     body: [
       <>
+        <Paper variant="outlined" sx={{ p: 2, borderRadius: 3 }} className="project-container">
+          <div className="project-links">
+            <Link href="https://boardz.vercel.app/" target="_blank" fontWeight={600} fontSize="large" color="secondary">
+              <Button startIcon={<LinkIcon />} color="secondary">
+                boardz.vercel.app
+              </Button>
+            </Link>
+            <Link href="https://github.com/wassupOG/boardz" target="_blank" fontWeight={600} fontSize="large" color="secondary">
+              <Button startIcon={<GitHubIcon />} color="secondary">
+                GitHub
+              </Button>
+            </Link>
+          </div>
+          <div className="project-stack">
+            <strong>Использованный стек:</strong> Next.js, React, TypeScript, Tailwind, PostgreSQL, Prisma и shadcn/ui.
+          </div>
+          Таск трекер с досками для разных типов задач.
+        </Paper>
+
         <Paper variant="outlined" sx={{ p: 2, borderRadius: 3 }} className="project-container">
           <div className="project-links">
             <Link href="https://helper-ai.vercel.app/" target="_blank" fontWeight={600} fontSize="large" color="secondary">
@@ -153,7 +172,7 @@ const enContents = [
   },
   {
     title: "💻 Stack",
-    body: [<>React, Zustand, Redux, Redux Toolkit, TypeScript, JavaScript, Next.js, Python, Django, MySQL, SQLite, CSS, SCSS, Tailwind, & HTML.</>],
+    body: [<>React, Zustand, Redux, Redux Toolkit, TypeScript, JavaScript, Next.js, Python, Django, MySQL, PostgreSQL, SQLite, CSS, SCSS, Tailwind, & HTML.</>],
   },
   {
     title: "🤓 Education & Academic Achievements",
@@ -198,6 +217,25 @@ const enContents = [
     title: "🚀 Projects",
     body: [
       <>
+        <Paper variant="outlined" sx={{ p: 2, borderRadius: 3 }} className="project-container">
+          <div className="project-links">
+            <Link href="https://boardz.vercel.app/" target="_blank" fontWeight={600} fontSize="large" color="secondary">
+              <Button startIcon={<LinkIcon />} color="secondary">
+                boardz.vercel.app
+              </Button>
+            </Link>
+            <Link href="https://github.com/wassupOG/boardz" target="_blank" fontWeight={600} fontSize="large" color="secondary">
+              <Button startIcon={<GitHubIcon />} color="secondary">
+                GitHub
+              </Button>
+            </Link>
+          </div>
+          <div className="project-stack">
+            <strong>Stack used:</strong> Next.js, React, TypeScript, Tailwind, PostgreSQL, Prisma & shadcn/ui.
+          </div>
+          Task tracker with boards for different types of tasks.
+        </Paper>
+
         <Paper variant="outlined" sx={{ p: 2, borderRadius: 3 }} className="project-container">
           <div className="project-links">
             <Link href="https://helper-ai.vercel.app/" target="_blank" fontWeight={600} fontSize="large" color="secondary">
