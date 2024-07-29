@@ -1,9 +1,10 @@
 import BodySections from "../components/Section"
-import { Button, Link, Paper } from "@mui/material"
-import LinkIcon from "@mui/icons-material/Link"
-import GitHubIcon from "@mui/icons-material/GitHub"
+import { Link, Paper } from "@mui/material"
 import { languageStore } from "../stores/LanguageStore"
 import LanguageSwitch from "../components/LanguageSwitch"
+
+const STACK = "React, Zustand, Redux, Redux Toolkit, TypeScript, JavaScript, Next.js, NestJS, Express.js, MySQL, PostgreSQL, CSS, SCSS, Tailwind, GraphQL, turborepo, ApolloClient, ApolloServer, materialUI, shadcnUI"
+const RESUME_LINK = "https://disk.yandex.com/i/g7pIy6pgVgLrBg"
 
 const ruContents = [
   {
@@ -16,7 +17,7 @@ const ruContents = [
       <>
         <Paper variant="outlined" sx={{ p: 1, borderRadius: 3, mt: 1 }}>
           Открыт к предложениям на позицию frontend / fullstack разработчика -{" "}
-          <Link href="https://disk.yandex.com/i/g7pIy6pgVgLrBg" target="_blank">
+          <Link href={RESUME_LINK} target="_blank">
             ссылка на резюме
           </Link>
           .
@@ -26,13 +27,13 @@ const ruContents = [
   },
   {
     title: "💻 Стек технологий",
-    body: [<>React, Zustand, Redux, Redux Toolkit, TypeScript, JavaScript, Next.js, Python, Django, MySQL, PostgreSQL, SQLite, CSS, SCSS, Tailwind, и HTML.</>],
+    body: [<>{STACK}</>],
   },
   {
     title: "🤓 Образование и академические достижения",
     body: [
       <>
-        - Студент магистерской программы{" "}
+        - Выпускник магистерской программы{" "}
         <Link href="https://nnov.hse.ru/ma/global/" target="_blank">
           HSE Global Business
         </Link>{" "}
@@ -53,101 +54,13 @@ const ruContents = [
         - выпуск 2022.
       </>,
       <>
-        - Сдал IELTS Academic на 8 из 9 баллов - эквивалент C1/C2 по шкале CEFR.{" "}
+        - Отлично знаю английский - сдал IELTS Academic на 8 из 9 баллов - эквивалент C1/C2 по шкале CEFR.{" "}
         <Link href="https://disk.yandex.ru/i/0nDS3cJpqKX05A" target="_blank">
           (сертификат)
         </Link>
-      </>,
-      <>
-        - Закончил{" "}
-        <Link href="https://disk.yandex.com/i/h8-HN4qphpwzGQ" target="_blank">
-          CS50
-        </Link>{" "}
-        от Гарварда.
-      </>,
+      </>
     ],
-  },
-  {
-    title: "🚀 Проекты",
-    body: [
-      <>
-        <Paper variant="outlined" sx={{ p: 2, borderRadius: 3 }} className="project-container">
-          <div className="project-links">
-            <Link href="https://boardz.vercel.app/" target="_blank" fontWeight={600} fontSize="large" color="secondary">
-              <Button startIcon={<LinkIcon />} color="secondary">
-                boardz.vercel.app
-              </Button>
-            </Link>
-            <Link href="https://github.com/wassupOG/boardz" target="_blank" fontWeight={600} fontSize="large" color="secondary">
-              <Button startIcon={<GitHubIcon />} color="secondary">
-                GitHub
-              </Button>
-            </Link>
-          </div>
-          <div className="project-stack">
-            <strong>Использованный стек:</strong> Next.js, React, TypeScript, Tailwind, PostgreSQL, Prisma и shadcn/ui.
-          </div>
-          Таск трекер с досками для разных типов задач.
-        </Paper>
-
-        <Paper variant="outlined" sx={{ p: 2, borderRadius: 3 }} className="project-container">
-          <div className="project-links">
-            <Link href="https://helper-ai.vercel.app/" target="_blank" fontWeight={600} fontSize="large" color="secondary">
-              <Button startIcon={<LinkIcon />} color="secondary">
-                helper-ai.vercel-app
-              </Button>
-            </Link>
-            <Link href="https://github.com/wassupOG/helper-ai" target="_blank" fontWeight={600} fontSize="large" color="secondary">
-              <Button startIcon={<GitHubIcon />} color="secondary">
-                GitHub
-              </Button>
-            </Link>
-          </div>
-          <div className="project-stack">
-            <strong>Использованный стек:</strong> Next.js, React, TypeScript и Tailwind.
-          </div>
-          ИИ платформа с чат-ботом, генерацией видео, фото и музыки. Авторизация реализована с помощью GitHub и Google аккаунтов.
-        </Paper>
-        <Paper variant="outlined" sx={{ p: 2, borderRadius: 3 }} className="project-container">
-          <div className="project-links">
-            <Link href="https://englishful.ru/" target="_blank" fontWeight={600} fontSize="large" color="secondary">
-              <Button startIcon={<LinkIcon />} color="secondary">
-                englishful.ru
-              </Button>
-            </Link>
-            <Link href="https://github.com/wassupOG/englishful-public" target="_blank" fontWeight={600} fontSize="large" color="secondary">
-              <Button startIcon={<GitHubIcon />} color="secondary">
-                GitHub
-              </Button>
-            </Link>
-          </div>
-          <div className="project-stack">
-            <strong>Использованный стек:</strong> Django, MySQL, JavaScript и SCSS.
-          </div>
-          Мой главный проект - онлайн платформа для изучения английского языка <strong>"englishful"</strong>.
-        </Paper>
-
-        <Paper variant="outlined" sx={{ p: 2, borderRadius: 3 }} className="project-container">
-          <div className="project-links">
-            <Link href="https://xn--h1adaoabdikk3e.xn--p1ai/" target="_blank" fontWeight={600} fontSize="large" color="secondary">
-              <Button startIcon={<LinkIcon />} color="secondary">
-                простокошки.рф
-              </Button>
-            </Link>
-            <Link href="https://github.com/wassupOG/prostokoshkiTS" target="_blank" fontWeight={600} fontSize="large" color="secondary">
-              <Button startIcon={<GitHubIcon />} color="secondary">
-                GitHub
-              </Button>
-            </Link>
-          </div>
-          <div className="project-stack">
-            <strong>Использованный стек:</strong> React, TypeScript, Zustand и SCSS.
-          </div>
-          Cайт некоммерческого приюта для бездомных животных <strong>"Просто Кошки"</strong>.
-        </Paper>
-      </>,
-    ],
-  },
+  }
 ]
 
 const enContents = [
@@ -162,7 +75,7 @@ const enContents = [
       <>
         <Paper variant="outlined" sx={{ p: 1, borderRadius: 3, mt: 1 }}>
           Open to offers for a frontend / fullstack developer role -{" "}
-          <Link href="https://disk.yandex.com/i/x17jeYiLERkVFg" target="_blank">
+          <Link href={RESUME_LINK} target="_blank">
             resume link
           </Link>
           .
@@ -172,7 +85,7 @@ const enContents = [
   },
   {
     title: "💻 Stack",
-    body: [<>React, Zustand, Redux, Redux Toolkit, TypeScript, JavaScript, Next.js, Python, Django, MySQL, PostgreSQL, SQLite, CSS, SCSS, Tailwind, & HTML.</>],
+    body: [<>{STACK}</>],
   },
   {
     title: "🤓 Education & Academic Achievements",
@@ -212,89 +125,7 @@ const enContents = [
         .
       </>,
     ],
-  },
-  {
-    title: "🚀 Projects",
-    body: [
-      <>
-        <Paper variant="outlined" sx={{ p: 2, borderRadius: 3 }} className="project-container">
-          <div className="project-links">
-            <Link href="https://boardz.vercel.app/" target="_blank" fontWeight={600} fontSize="large" color="secondary">
-              <Button startIcon={<LinkIcon />} color="secondary">
-                boardz.vercel.app
-              </Button>
-            </Link>
-            <Link href="https://github.com/wassupOG/boardz" target="_blank" fontWeight={600} fontSize="large" color="secondary">
-              <Button startIcon={<GitHubIcon />} color="secondary">
-                GitHub
-              </Button>
-            </Link>
-          </div>
-          <div className="project-stack">
-            <strong>Stack used:</strong> Next.js, React, TypeScript, Tailwind, PostgreSQL, Prisma & shadcn/ui.
-          </div>
-          Task tracker with boards for different types of tasks.
-        </Paper>
-
-        <Paper variant="outlined" sx={{ p: 2, borderRadius: 3 }} className="project-container">
-          <div className="project-links">
-            <Link href="https://helper-ai.vercel.app/" target="_blank" fontWeight={600} fontSize="large" color="secondary">
-              <Button startIcon={<LinkIcon />} color="secondary">
-                helper-ai.vercel-app
-              </Button>
-            </Link>
-            <Link href="https://github.com/wassupOG/helper-ai" target="_blank" fontWeight={600} fontSize="large" color="secondary">
-              <Button startIcon={<GitHubIcon />} color="secondary">
-                GitHub
-              </Button>
-            </Link>
-          </div>
-          <div className="project-stack">
-            <strong>Stack used:</strong> Next.js, React, TypeScript & Tailwind.
-          </div>
-          An online AI platform with chatbot, video, audio & image generation. Users can sign-up via their GitHub or Google account.
-        </Paper>
-
-        <Paper variant="outlined" sx={{ p: 2, borderRadius: 3 }} className="project-container">
-          <div className="project-links">
-            <Link href="https://englishful.ru/" target="_blank" fontWeight={600} fontSize="large" color="secondary">
-              <Button startIcon={<LinkIcon />} color="secondary">
-                englishful.ru
-              </Button>
-            </Link>
-            <Link href="https://github.com/wassupOG/englishful-public" target="_blank" fontWeight={600} fontSize="large" color="secondary">
-              <Button startIcon={<GitHubIcon />} color="secondary">
-                GitHub
-              </Button>
-            </Link>
-          </div>
-          <div className="project-stack">
-            <strong>Stack used:</strong> Django, MySQL, JavaScript & SCSS.
-          </div>
-          My primary project - an online platform for learning english called <strong>"englishful"</strong>.
-        </Paper>
-
-        <Paper variant="outlined" sx={{ p: 2, borderRadius: 3 }} className="project-container">
-          <div className="project-links">
-            <Link href="https://xn--h1adaoabdikk3e.xn--p1ai/" target="_blank" fontWeight={600} fontSize="large" color="secondary">
-              <Button startIcon={<LinkIcon />} color="secondary">
-                prostokoshki.rf
-              </Button>
-            </Link>
-            <Link href="https://github.com/wassupOG/prostokoshkiTS" target="_blank" fontWeight={600} fontSize="large" color="secondary">
-              <Button startIcon={<GitHubIcon />} color="secondary">
-                GitHub
-              </Button>
-            </Link>
-          </div>
-          <div className="project-stack">
-            <strong>Stack used:</strong> React, TypeScript, Zustand & SCSS.
-          </div>
-          Charity website for an animal shelter based in Nizhny Novgorod.
-        </Paper>
-      </>,
-    ],
-  },
+  }
 ]
 
 export default function MainPage() {
