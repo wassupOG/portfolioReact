@@ -3,7 +3,7 @@ import { Link, Paper } from "@mui/material"
 import { languageStore } from "../stores/LanguageStore"
 import LanguageSwitch from "../components/LanguageSwitch"
 
-const STACK = "React, Zustand, Redux, Redux Toolkit, TypeScript, JavaScript, Next.js, NestJS, Express.js, MySQL, PostgreSQL, CSS, SCSS, Tailwind, GraphQL, turborepo, ApolloClient, ApolloServer, materialUI, shadcnUI"
+const STACK = "React, Node, GraphQL, REST, TypeScript, JavaScript, Prisma, Zustand, Redux, Redux Toolkit, Next.js, NestJS, Express.js, MySQL, PostgreSQL, CSS, SCSS, Tailwind, turborepo, ApolloClient, TanStack Query (React Query), axios, react-admin, ApolloServer, materialUI, shadcnUI"
 const RESUME_LINK = "https://disk.yandex.com/i/g7pIy6pgVgLrBg"
 
 const ruContents = [
@@ -95,7 +95,7 @@ const enContents = [
         <Link href="https://nnov.hse.ru/en/ma/global/" target="_blank">
           HSE Global Business
         </Link>{" "}
-        student - class of 2024. (master's degree)
+        graduate - class of 2024. (master's degree)
       </>,
       <>
         -{" "}
@@ -116,13 +116,6 @@ const enContents = [
         <Link href="https://disk.yandex.ru/i/0nDS3cJpqKX05A" target="_blank">
           (certificate)
         </Link>
-      </>,
-      <>
-        - Finished Harvard's{" "}
-        <Link href="https://disk.yandex.com/i/h8-HN4qphpwzGQ" target="_blank">
-          CS50
-        </Link>
-        .
       </>,
     ],
   }
