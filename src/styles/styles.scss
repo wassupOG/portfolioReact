@@ -19,6 +19,29 @@ header {
   align-items: center;
 }
 
+.flex-row-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-column-small-gap {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.flex-column-no-gap {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0px 0px 33px;
+}
+
+.flex-row-small-gap {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+
 .profile-links {
   margin-top: 30px;
   display: flex;
