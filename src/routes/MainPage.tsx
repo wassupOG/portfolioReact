@@ -3,7 +3,7 @@ import { Link, Paper } from "@mui/material"
 import { languageStore } from "../stores/LanguageStore"
 import LanguageSwitch from "../components/LanguageSwitch"
 
-const STACK = "React, Node, GraphQL, REST, TypeScript, JavaScript, Prisma, Zustand, Redux, Redux Toolkit, Next.js, NestJS, Express.js, MySQL, PostgreSQL, CSS, SCSS, Tailwind, turborepo, ApolloClient, TanStack Query (React Query), axios, react-admin, ApolloServer, materialUI, shadcnUI"
+const STACK = "React, Node, GraphQL, REST, TypeScript, JavaScript, Prisma, Jest, Zustand, Redux, Redux Toolkit, Next.js, NestJS, Express.js, MySQL, PostgreSQL, CSS, SCSS, Tailwind, turborepo, ApolloClient, TanStack Query (React Query), axios, react-admin, ApolloServer, materialUI, shadcnUI"
 const RESUME_LINK = "https://disk.yandex.com/i/g7pIy6pgVgLrBg"
 
 const ruContents = [
@@ -11,7 +11,7 @@ const ruContents = [
     title: "👋 Обо мне",
     body: [
       <>
-        Привет! Меня зовут Илья, я занимаюсь веб-разработкой. С удовольствием работаю как над backend, так и frontend составляющими, всегда уделяя внимание
+        Привет! Меня зовут Илья, я <b style={{fontSize: "1.05rem"}}>Fullstack / Frontend React разработчик</b>. С удовольствием работаю как над backend, так и frontend составляющими, всегда уделяя внимание
         деталям. К любой задаче или проблеме отношусь как к шансу улучшить свои навыки и узнать что-то новое.
       </>,
       <>
@@ -68,7 +68,7 @@ const enContents = [
     title: "👋 About me",
     body: [
       <>
-        Hello there, I'm Ilya – a passionate developer who really enjoys building stuff. I work on my projects with love for both aesthetics and code. I
+        Hello there, I'm Ilya – <b style={{fontSize: "1.05rem"}}>Fullstack / Frontend React developer</b> who really enjoys building stuff. I work on my projects with love for both aesthetics and code. I
         approach each challenge with a growth-oriented mindset, always seeking opportunities to enhance my skills and create solutions that not only meet but
         also exceed expectations.
       </>,
